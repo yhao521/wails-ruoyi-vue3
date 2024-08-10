@@ -1,0 +1,105 @@
+{
+  "name": "ruoyi",
+  "version": "3.8.7",
+  "description": "我的工具箱",
+  "author": "若依",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:prod": "vite build",
+    "build:stage": "vite build --mode staging",
+    "preview": "vite preview",
+    "lint": "eslint --ext .js,.vue src"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,vue}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "keywords": [
+    "vue",
+    "admin",
+    "dashboard",
+    "element-ui",
+    "boilerplate",
+    "admin-template",
+    "management-system"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/y_project/RuoYi-Vue.git"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "2.3.1",
+    "@highlightjs/vue-plugin": "^2.1.0",
+    "@moefe/vue-aplayer": "^2.0.0-beta.5",
+    "@vueup/vue-quill": "1.2.0",
+    "@vueuse/core": "10.11.0",
+    "axios": "1.7.3",
+    "echarts": "5.5.1",
+    "element-plus": "2.7.8",
+    "file-saver": "2.0.5",
+    "fuse.js": "6.6.2",
+    "highlight.js": "11.10.0",
+    "hls.js": "^1.5.13",
+    "js-beautify": "1.15.1",
+    "js-cookie": "3.0.5",
+    "jsencrypt": "3.3.2",
+    "nprogress": "0.2.0",
+    "path-browserify": "^1.0.1",
+    "pinia": "2.0.22",
+    "quill": "2.0.2",
+    "screenfull": "6.0.2",
+    "sortablejs": "1.15.2",
+    "throttle-debounce": "^5.0.2",
+    "vue": "3.2.45",
+    "vue-cropper": "1.0.3",
+    "vue-cookies": "^1.8.4",
+    "vue-json-viewer": "^3.0.4",
+    "vue-meta": "^3.0.0-alpha.2",
+    "vue-router": "4.4.2",
+    "vue3-count-to": "^1.1.2",
+    "vuedraggable": "2.24.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "5.1.2",
+    "@vitejs/plugin-vue-jsx": "^4.0.0",
+    "@vue/babel-plugin-jsx": "^1.2.2",
+    "@vue/compiler-sfc": "3.4.35",
+    "@vue/tsconfig": "^0.5.1",
+    "babel-eslint": "10.1.0",
+    "babel-plugin-dynamic-import-node": "2.3.3",
+    "chalk": "5.3.0",
+    "connect": "3.7.0",
+    "eslint": "^9.8.0",
+    "eslint-plugin-vue": "9.27.0",
+    "lint-staged": "15.2.8",
+    "runjs": "4.4.2",
+    "sass": "1.57.1",
+    "sass-loader": "16.0.0",
+    "svg-sprite-loader": "6.0.11",
+    "unplugin-auto-import": "0.18.2",
+    "vite": "5.3.5",
+    "vite-plugin-compression": "0.5.1",
+    "vite-plugin-svg-icons": "2.0.1",
+    "vite-plugin-vue-setup-extend": "0.4.0",
+    "vue-template-compiler": "2.7.16"
+  },
+  "engines": {
+    "node": ">=16.20.2",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "type": "module",
+  "packageManager": "pnpm@9.6.0"
+}
